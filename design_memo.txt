@@ -1,0 +1,7 @@
+
+I used a graph for this social network because people can have many friends and those friends can also be friends with each other. Each person is a node and each friendship is a connection between two nodes. This makes a graph a good way to show how people are connected. My code uses an adjacency list, which means each Person object keeps a list of their friends.
+
+A normal list would not work as well because it would only store people in order. It would not show who is friends with who. A tree would also be a bad pick because trees have a parenta and child structure. Real friendships do not follow that structure. A person can be connected to many different groups at the same time.
+
+One thing I noticed is that the dictionary makes it easy to find a person by their name. Adding a friendship takes a little more work because the program must update both people's friend lists. My program also checks those lists to avoid adding the same friend twice. That check gets slower when someone has a lot of friends. Printing the whole network also takes more time as more people and friendships are added because the program has to go through every person and their friends.
+
